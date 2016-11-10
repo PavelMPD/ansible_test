@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  vars_files:
+    - deploy-vars.yml
+  become: yes
+
+  tasks:
+    - name: Install system packages
+      apt: pkg={{ item }} update-cache=yes
+      with_items: "{{ system_packages }}"

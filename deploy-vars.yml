@@ -1,0 +1,22 @@
+---
+project_name: windswain
+
+install_root: /srv
+
+project_repository: ssh://git@git.itransition.com:7999/tpi/tpi.git
+
+db_name: tpi
+db_user: root
+db_password: root
+
+system_packages:
+  - git
+  - python-pip
+  - python-virtualenv
+  - virtualenvwrapper
+  - python3-dev
+  - build-essential
+  - nodejs
+  #- npm
+  - mysql-server
+  - dos2unix
